@@ -35,12 +35,12 @@
           <h3>External Muun Server</h3>
         </center>
         <center>
-						<form action="" method="get" id="web-search-box" style="transform:scale(1.1)">
-							<p>
-								<input type="text" placeholder="Enter URL" style="border:none;border-radius: 5px;padding:10px;" id="url" name="url" />&nbsp;
-								<input type="submit" style="border:none;border-radius: 5px;padding:10px;width:40px;background:#704ea0;color:#fff;font-weight:bold;" value="GO" />
-							</p>
-						</form>
+		<form action="" method="get" id="web-search-box" style="transform:scale(1.1)">
+			<p>
+				<input type="text" placeholder="Enter URL" style="border:none;border-radius: 5px;padding:10px;" id="url" name="url" />&nbsp;
+				<input type="submit" style="border:none;border-radius: 5px;padding:10px;width:40px;background:#704ea0;color:#fff;font-weight:bold;" value="GO" />
+			</p>
+		</form>
         </center>
 	  		<center>Titanium Network has partnered with <a href="https://muun.cf">Muun</a> to create this proxy.
           <p>You can access Surviv.io, Shellshocker.io, Superhex.io, Anark.io, Mope.io, Paper.io, and maybe more!</p>
@@ -60,7 +60,7 @@
         $('web-search-box').onsubmit = function() {
           var url = $('url').value;
           //this is the URL for the server
-          window.location.href = `https://muun.gq/search?url=${url}`;
+          window.location.href = `https://muun.cf/?ref=${url}`;
           return false;
         };
         window.onload = function() {
