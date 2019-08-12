@@ -95,7 +95,7 @@ $prefixPort = $usingDefaultPort ? "" : ":" . $_SERVER["SERVER_PORT"];
 $prefixHost = $_SERVER["HTTP_HOST"];
 $prefixHost = strpos($prefixHost, ":") ? implode(":", explode(":", $_SERVER["HTTP_HOST"], -1)) : $prefixHost;
 
-define("PROXY_PREFIX", "http" . (isset($_SERVER["HTTPS"]) ? "s" : "") . "://" . $prefixHost . $prefixPort . $_SERVER["SCRIPT_NAME"] . "?");
+define("PROXY_PREFIX", "https://" . $prefixHost . $prefixPort . $_SERVER["SCRIPT_NAME"] . "?");
 
 //Makes an HTTP request via cURL, using request data that was passed directly to this script.
 function makeRequest($url) {
@@ -119,11 +119,11 @@ function makeRequest($url) {
     "Content-Length",
     "Host",
     "Origin",
-	  "Content-Security-Policy".
-	  "X-Frame-Options",
-	  "X-Content-Type-Options",
-	  "Strict-Transport-Security",
-	  "X-Xss-Protection"
+	"Content-Security-Policy".
+	"X-Frame-Options",
+	"X-Content-Type-Options",
+	"Strict-Transport-Security",
+	"X-Xss-Protection"
   ));
 
   $removedHeaders = array_map("strtolower", $removedHeaders);
