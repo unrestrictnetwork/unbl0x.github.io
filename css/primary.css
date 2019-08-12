@@ -71,6 +71,13 @@ body {text-decoration:none}
 
 .nobg {background-color: white}
 
+.whitebg::before {
+    background: none !important    
+}
+
+.whitebg {
+    background: white !important;
+}
 /*this right here is the wallpaper for the site, replace with a file or Base64 (preferably)*/
 
   body {
