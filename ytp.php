@@ -91,6 +91,7 @@ if (!function_exists("getallheaders")) {
 if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) == true) {
   if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
 	  $_SERVER["HTTPS"] = true;
+	  $_SERVER["SERVER_PORT"] = 443;
   }
 }
 	
