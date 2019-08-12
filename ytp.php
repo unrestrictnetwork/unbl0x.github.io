@@ -475,7 +475,7 @@ if (stripos($contentType, "text/html") !== false) {
       var url1 = window.location.search.replace("?", "")
       var url2 = new URL(url1)
       var url3 = url2.protocol + "//" + url2.host
-        document.write("\"<base href=\"" + document.location.protocol + "//" + document.location.host + "\ytp.php?" + url3 + ">\"");
+        document.write("\"<base href=\"" + document.location.protocol + "//" + document.location.host + "/ytp.php?" + url3 + "\">");
 
         if (window.XMLHttpRequest) {
 
