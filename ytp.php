@@ -474,7 +474,7 @@ if (stripos($contentType, "text/html") !== false) {
       '(function() {
       var match = window.location.search.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/)
       baseurl = match[1] + "//" + match[2]
-        document.write("\"<base href=\"" + document.location.protocol + "//\" + document.location.host + \ytp.php?\" + baseurl + \""" />\");
+        document.write("\"<base href=\"" + document.location.protocol + "//" + document.location.host + "\ytp.php?" + baseurl+ ">\"");
 
         if (window.XMLHttpRequest) {
 
