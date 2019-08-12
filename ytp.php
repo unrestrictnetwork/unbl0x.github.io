@@ -472,6 +472,9 @@ if (stripos($contentType, "text/html") !== false) {
 
     $scriptElem = $doc->createElement("script",
       '(function() {
+      var match = window.location.search.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/)
+      baseurl = match[1] + "//" + match[2]
+        document.write(\"<base href=\"" + document.location.protocol + "//\" + document.location.host + \ytp.php?\" + baseurl + \""" />\");
 
         if (window.XMLHttpRequest) {
 
@@ -527,6 +530,7 @@ if (stripos($contentType, "text/html") !== false) {
                 if (url.indexOf("' . PROXY_PREFIX . '") == -1) {
                   url = "' . PROXY_PREFIX . '" + url;
                 }
+		url = url.replace()
                 arguments[1] = url;
               }
               return proxied.apply(this, [].slice.call(arguments));
