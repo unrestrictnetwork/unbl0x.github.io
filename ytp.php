@@ -118,7 +118,12 @@ function makeRequest($url) {
     "Accept-Encoding", //Throw away the browser's Accept-Encoding header if any and let cURL make the request using gzip if possible.
     "Content-Length",
     "Host",
-    "Origin"
+    "Origin",
+	  "Content-Security-Policy".
+	  "X-Frame-Options",
+	  "X-Content-Type-Options",
+	  "Strict-Transport-Security",
+	  "X-Xss-Protection"
   ));
 
   $removedHeaders = array_map("strtolower", $removedHeaders);
