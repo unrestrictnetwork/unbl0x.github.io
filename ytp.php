@@ -88,7 +88,11 @@ if (!function_exists("getallheaders")) {
     return $result;
   }
 }
-if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {$_SERVER["HTTPS"] = true}
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) == true) {
+  if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
+	  $_SERVER["HTTPS"] = true;
+  }
+}
 	
 $usingDefaultPort =  (!isset($_SERVER["HTTPS"]) && $_SERVER["SERVER_PORT"] === 80) || (isset($_SERVER["HTTPS"]) && $_SERVER["SERVER_PORT"] === 443);
 $prefixPort = $usingDefaultPort ? "" : ":" . $_SERVER["SERVER_PORT"];
