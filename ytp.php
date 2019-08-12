@@ -472,9 +472,10 @@ if (stripos($contentType, "text/html") !== false) {
 
     $scriptElem = $doc->createElement("script",
       '(function() {
-      var match = window.location.search.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/)
-      baseurl = match[1] + "//" + match[2]
-        document.write("\"<base href=\"" + document.location.protocol + "//" + document.location.host + "\ytp.php?" + baseurl+ ">\"");
+      var url1 = window.location.search.replace("?", "")
+      var url2 = new URL(url1)
+      var url3 = url2.protocol + "//" + url2.host
+        document.write("\"<base href=\"" + document.location.protocol + "//" + document.location.host + "\ytp.php?" + url3 + ">\"");
 
         if (window.XMLHttpRequest) {
 
