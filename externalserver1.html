@@ -43,8 +43,8 @@
           <center>Titanium Network has partnered with <a href="https://muun.cf">Muun</a> to create this proxy.
             <p>Muun is a highly optimized fork of Node Unblocker that allows you to play games at school without those pesky block screens or any performance drops!</p>
           </center>
-          <!--<div class="d-box"></div>-->
-          <div class="d-box">
+          <div class="d-box">          <!--<div class="d-box"></div>-->
+
             <center>
               <h4>Features:</h4>
             </center>
@@ -64,7 +64,7 @@
             return document.getElementById(id);
           }
           $('web-search-box').onsubmit = function() {
-            var url = $('url').val();
+            var url = $('url').value;
             //this is the URL for the server
             window.location.href = `https://muun.cf/?ref=${url}&from=TitaniumNetwork`;
             return false;
