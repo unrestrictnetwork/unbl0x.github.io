@@ -49,7 +49,7 @@ class censorDodge {
             $this->URL = $this->modifyURL($URL); //Fix any formatting issues with the URL so it is resolvable
         }
 #this is the injected button over every webpage!
-        $form = "<div id='miniForm' style='z-index: 9999999999; position: fixed; right:15px; top:10px;'><form style='display:inline;' onsubmit='goToPage();' id='miniFormBoxes' action='".cdURL."'><input type='text' autocomplete=\"off\" style='all:initial; background:#fff; border:1px solid #a9a9a9; padding:3px;border-radius:2px;' placeholder='URL' value='' name='cdURL'>
+        $form = ""
             
             <input type='submit' style='all:initial; cursor:pointer; margin-left:5px; margin-right:5px; border-radius:2px;background:#fff; border:1px solid #989898; padding:3px; background: linear-gradient(to bottom, #f6f6f6 0%,#dedede 100%);' value='Go!'></form>
             
