@@ -49,7 +49,6 @@
               <h4>Features:</h4>
             </center>
             <h5>You can:
-              <h6>-Play YouTube videos by putting 'https://invidio.us/' in the above bar!
               <h6>-Play blocked IO games with little performance penalty.</h6>
               <h6>-View webpages that require lots of scripts to function.</h6>
               <h6>-Successfully sign into *some* sites.</h6>
@@ -65,7 +64,7 @@
             return document.getElementById(id);
           }
           $('web-search-box').onsubmit = function() {
-            var url = $('url').value;
+            var url = $('url').val();
             //this is the URL for the server
             window.location.href = `https://muun.cf/?ref=${url}&from=TitaniumNetwork`;
             return false;
