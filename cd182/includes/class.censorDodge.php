@@ -23,7 +23,7 @@ class censorDodge {
     //Additional settings that are applied for the page request
     public $curlSettings = array();
 
-    function __construct($URL = "", $logToFile = true, $preventHotlinking = true) {
+    function __construct($URL = "", $logToFile = true, $preventHotlinking = false) {
 	    set_time_limit(0); error_reporting(0);
         set_exception_handler(array($this, 'errorHandler')); //Set our custom error handler
         $this->isSSL = !(empty($_SERVER['HTTPS']) || strtolower($_SERVER['HTTPS']) == 'off'); //Check if the proxy is running on a SSL certificate
