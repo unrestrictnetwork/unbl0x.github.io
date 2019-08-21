@@ -60,8 +60,11 @@
           </div>
         </div>
         <script>
-          const key = await fetch('https://muun.cf/apikey')
-              .then((res) => res.json());
+          let key;
+          async function getKey() {
+            key = await fetch('https://muun.cf/apikey')
+                .then((res) => res.json());
+          }
           
           function $(id) {
             return document.getElementById(id);
