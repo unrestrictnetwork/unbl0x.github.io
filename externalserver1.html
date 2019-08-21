@@ -65,6 +65,7 @@
             key = await fetch('https://muun.cf/apikey')
                 .then((res) => res.json());
           }
+          getKey();
           
           function $(id) {
             return document.getElementById(id);
