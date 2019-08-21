@@ -60,18 +60,17 @@
           </div>
         </div>
         <script>
+          const key = await fetch('https://muun.cf/apikey')
+              .then((res) => res.json());
+          
           function $(id) {
             return document.getElementById(id);
           }
           $('web-search-box').onsubmit = function() {
             var url = $('url').value;
             //this is the URL for the server
-            fetch('https://muun.cf/apikey')
-              .then((res) => res.json())
-              .then((body) => {
-                window.location.href = `https://muun.cf/?key=${body.key}&ref=${url}&from=TitaniumNetwork`;
-                return false;
-              });   
+            window.location.href = `https://muun.cf/?key=${key.key}&ref=${url}&from=TitaniumNetwork`;
+            return false;  
           };
           window.onload = function() {
             $('url').focus();
