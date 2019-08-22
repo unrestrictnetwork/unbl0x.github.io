@@ -3,6 +3,9 @@
 A beautiful and lightweight web-proxy site built to be easy to use and modify for everyone; for students, by students.
 
 Initial Release Date: 02/11/2019.
+
+https://heroku.com/deploy?template=https://github.com/titaniumnetwork-dev/phoenix-reborn
+
 #### Basic info
 
 This web-app, measuring about 20 MB, is designed to be as light on server storage as possible.
