@@ -4,9 +4,7 @@ A beautiful and lightweight web-proxy site built to be easy to use and modify fo
 
 Initial Release Date: 02/11/2019.
 
-clicker this link to deploy to Heroku
-
-https://heroku.com/deploy?template=https://github.com/titaniumnetwork-dev/phoenix-reborn
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/titaniumnetwork-dev/phoenix-reborn)
 
 #### Basic info
 
