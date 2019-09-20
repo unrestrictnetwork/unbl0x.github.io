@@ -1,23 +1,68 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2b4ef920bbee49d62df8048e5f70c93",
+    "content-hash": "fdfbf6caace1f80ae1be95037659b02f",
     "packages": [
+        {
+            "name": "athlon1600/php-proxy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/titaniumnetwork-dev/php-proxy.git",
+                "reference": "580be299a95e8b83d8e7e0b85c5cd906a4a015d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/titaniumnetwork-dev/php-proxy/zipball/580be299a95e8b83d8e7e0b85c5cd906a4a015d8",
+                "reference": "580be299a95e8b83d8e7e0b85c5cd906a4a015d8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*"
+            },
+            "suggest": {
+                "predis/predis": "For caching purposes"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Proxy\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "homepage": "https://www.php-proxy.com/",
+            "keywords": [
+                "php proxy",
+                "php proxy script",
+                "php web proxy",
+                "proxy script",
+                "web proxy"
+            ],
+            "support": {
+                "source": "https://github.com/titaniumnetwork-dev/php-proxy/tree/master"
+            },
+            "time": "2018-03-25T20:31:14+00:00"
+        },
         {
             "name": "athlon1600/php-proxy-plugin-bundle",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Athlon1600/php-proxy-plugin-bundle.git",
-                "reference": "6f58fbba44c2b6ccf33c2fba1aaee2f3f5681193"
+                "reference": "41a52e6a6ca8611c39c3a90ced34e2e6dcf764d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Athlon1600/php-proxy-plugin-bundle/zipball/6f58fbba44c2b6ccf33c2fba1aaee2f3f5681193",
-                "reference": "6f58fbba44c2b6ccf33c2fba1aaee2f3f5681193",
+                "url": "https://api.github.com/repos/Athlon1600/php-proxy-plugin-bundle/zipball/41a52e6a6ca8611c39c3a90ced34e2e6dcf764d1",
+                "reference": "41a52e6a6ca8611c39c3a90ced34e2e6dcf764d1",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +82,7 @@
                 "MIT"
             ],
             "description": "A collection of useful plugins to be used with php-proxy",
-            "time": "2018-04-01T19:18:27+00:00"
+            "time": "2019-08-13T01:30:40+00:00"
         },
         {
             "name": "athlon1600/youtube-downloader",
@@ -73,58 +118,13 @@
                 "youtube downloader"
             ],
             "time": "2017-02-26T19:17:47+00:00"
-        },
-        {
-            "name": "shirtjs/php-proxy",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/shirtjs/php-proxy.git",
-                "reference": "b9c681e90316224c46de256761358f6b039ba8eb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/shirtjs/php-proxy/zipball/b9c681e90316224c46de256761358f6b039ba8eb",
-                "reference": "b9c681e90316224c46de256761358f6b039ba8eb",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*"
-            },
-            "suggest": {
-                "predis/predis": "For caching purposes"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Proxy\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "homepage": "https://www.php-proxy.com/",
-            "keywords": [
-                "php proxy",
-                "php proxy script",
-                "php web proxy",
-                "proxy script",
-                "web proxy"
-            ],
-            "support": {
-                "source": "https://github.com/shirtjs/php-proxy/tree/master"
-            },
-            "time": "2018-05-04T18:09:34+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "shirtjs/php-proxy": 20,
+        "athlon1600/php-proxy": 20,
         "athlon1600/php-proxy-plugin-bundle": 20
     },
     "prefer-stable": false,
