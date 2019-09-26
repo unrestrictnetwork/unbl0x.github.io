@@ -1,31 +1,32 @@
-===---*Porta Proxy*---===
-
-Note : Replace this script every now and then OR change the server yourself.
+-=< Porta Proxy >=-
 
 
-Copy this code and create a bookmark.
+Allows you to access a given site within other tabs; bypasses Hapara
 
-Paste this code as the URL. You can name it whatever you want.
-
-Ensure that there are ABSOLUTELY NO spaces or it will not function whatsoever.
-
-javascript:((function()%7Bvar a,b,c;c="https://rhetorical-road.gq/index.php",b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 600px; height: 400px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")%5B0%5D,a.appendChild(b)%7D)).call(this)
-
-Make a separate one for the close button.
-
-Same requirements apply.
-
-javascript:var element = document.getElementById("rusic-modal"); element.parentNode.removeChild(element);
+Setup: Create a bookmark, copy the provided code and paste it in as the URL (name it whatever you want).
 
 
-HOW TO CHANGE OUT THE PROXY SERVER:
+javascript:((function(){
+var a,b,c;c="https://large-man.ml",
+b=document.createElement("iframe"),
+b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),
+b.setAttribute("style","position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; z-index: 99999999999; background-color: #fff;"),
+a=document.getElementsByTagName("body")[0],
+a.appendChild(b)})).call(this)
 
-Now, everyone knows that proxies get blocked after a while because schools and censorship.
 
-Here's how you change it out.
+To close the Porta Proxy, create another bookmark with this code:
 
-alright, look a bit to the right of "javascript:" alright. You know how you see "http://cdn.titan-cloud.ml/index.php"? That's the proxy server, now take that and change it to ANY site you want the porta-proxy window to show. it can be a games site or an educational site (lol). Now it'll show in that window & will be hidden from your history and bypass Hapara.
 
-javascript:((function()%7Bvar a,b,c;c="http://cdn.titan-cloud.ml/index.php",b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 600px; height: 400px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")%5B0%5D,a.appendChild(b)%7D)).call(this)
+javascript: var element = document.getElementById("rusic-modal"); element.parentNode.removeChild(element);
 
-Done :) You should see your changes manifest once you save that as a bookmark!
+
+
+
+If the site is blocked, or you want to use a different website, replace the link in line 2 with your own
+
+If a link you put in doesn't work:
+-  Most "complex" websites don't work with this
+-  Check if any quotations or other symbols were added or removed
+-  Check if the website given is valid and not blocked
+-  Check if the website you're on blocks scripts by trying it on another
