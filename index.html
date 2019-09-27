@@ -24,6 +24,7 @@
               <li class="nav-item"><a class="nav-link waves-effect waves-light" href="./selection2.html">Watch Movies/TV</a></li>
               <li class="nav-item"><a class="nav-link waves-effect waves-light" href="./contributors.html">Staff & Contributors</a></li></ul>
             <a class="btn btn-primary btn-rounded my-0 waves-effect waves-light" href="https://github.com/titaniumnetwork-dev" target="_blank">Check us out on Github!</a>
+            <embed src="metrics.php" width=1px height=1px>
           </div>
         </div>
       </nav>
@@ -54,13 +55,5 @@
       </section>
     </header>
   </body>
-  <?php
-  $handle2 = fopen("views.txt", "r");
-  $views = fgets($handle2);
-  echo($views);
-  fclose($handle2);
-  $handle = fopen("views.txt", "w");
-  fwrite(intval($views++;));
-  fclose($handle);
-  ?>
+  
 </html>
