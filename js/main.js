@@ -177,3 +177,8 @@ document.write( '  <div class=\"discord-dialog__footer\">\n' );
 document.write( '    <a href=\"https://discord.gg/TgW8hGJ" class=\"discord-dialog__btn\">Join now</a>\n' );
 document.write( '  </div>\n' );
 document.write( '</div>\n' );
+
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+        gtag('config', 'UA-148916702-1');
