@@ -178,7 +178,4 @@ document.write( '    <a href=\"https://discord.gg/TgW8hGJ" class=\"discord-dialo
 document.write( '  </div>\n' );
 document.write( '</div>\n' );
 
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-        gtag('config', 'UA-148916702-1');
+       
