@@ -8,10 +8,15 @@
                 {
                         "type": "vcs",
                         "url": "https://github.com/titaniumnetwork-dev/php-proxy"
+                },
+                {
+                        "type": "vcs",
+                        "url": "https://github.com/titaniumnetwork-dev/gfiles"
                 }
         ],
         "require": {
                 "athlon1600/php-proxy": "dev-master",
+                "titaniumnetwork-dev/gfiles": "dev-master/",
                 "athlon1600/php-proxy-plugin-bundle": "dev-master",
                 "ext-mbstring": "^7.2",
                 "ext-gd": "^7.2",
