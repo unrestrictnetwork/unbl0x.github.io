@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1271ebc2c905922f91b3d142ed8bc81",
+    "content-hash": "fdfbf6caace1f80ae1be95037659b02f",
     "packages": [
         {
             "name": "athlon1600/php-proxy",
@@ -118,31 +118,6 @@
                 "youtube downloader"
             ],
             "time": "2017-02-26T19:17:47+00:00"
-        },
-        {
-            "name": "titaniumnetwork-dev/gfiles",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/titaniumnetwork-dev/gfiles.git",
-                "reference": "e77e4a924694646720b1ea4de15ccfadf9ed204f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/titaniumnetwork-dev/gfiles/zipball/e77e4a924694646720b1ea4de15ccfadf9ed204f",
-                "reference": "e77e4a924694646720b1ea4de15ccfadf9ed204f",
-                "shasum": ""
-            },
-            "type": "project",
-            "description": "gamermoment",
-            "keywords": [
-                "hi"
-            ],
-            "support": {
-                "source": "https://github.com/titaniumnetwork-dev/gfiles/tree/master",
-                "issues": "https://github.com/titaniumnetwork-dev/gfiles/issues"
-            },
-            "time": "2019-10-09T02:18:45+00:00"
         }
     ],
     "packages-dev": [],
@@ -150,7 +125,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "athlon1600/php-proxy": 20,
-        "titaniumnetwork-dev/gfiles": 20,
         "athlon1600/php-proxy-plugin-bundle": 20
     },
     "prefer-stable": false,
