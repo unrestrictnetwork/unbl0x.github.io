@@ -333,12 +333,6 @@ $responseInfo = $response["responseInfo"];
 //If CURLOPT_FOLLOWLOCATION landed the proxy at a diferent URL than
 //what was requested, explicitly redirect the proxy there.
 $responseURL = $responseInfo["url"];
-
-if (strrpos($responseURL, $prefixHost) == true) {
-    header("Location: " . PROXY_PREFIX . str_ireplace($prefixHost, "invidio.us", $responseURL), true);
-    exit(0);
-}
-
 if ($responseURL !== $url) {
   if (strrpos($responseURL, "googlevideo.com") == true) {
     header("Location: " . $responseURL, true);
