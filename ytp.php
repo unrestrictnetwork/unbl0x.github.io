@@ -94,7 +94,12 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) == true) {
 	  $_SERVER["SERVER_PORT"] = 443;
   }
 }
-	
+
+if (isset($_SERVER['HHTP_CF_CONNECTING_IP'])) {
+	  $_SERVER["HTTPS"] = true;
+	  $_SERVER["SERVER_PORT"] = 443;
+}
+
 $usingDefaultPort =  (!isset($_SERVER["HTTPS"]) && $_SERVER["SERVER_PORT"] === 80) || (isset($_SERVER["HTTPS"]) && $_SERVER["SERVER_PORT"] === 443);
 $prefixPort = $usingDefaultPort ? "" : ":" . $_SERVER["SERVER_PORT"];
 //Use HTTP_HOST to support client-configured DNS (instead of SERVER_NAME), but remove the port if one is present
