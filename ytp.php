@@ -334,12 +334,15 @@ $responseInfo = $response["responseInfo"];
 //what was requested, explicitly redirect the proxy there.
 $responseURL = $responseInfo["url"];
 
+if (strrpos($responseURL, $prefixHost) == true) {
+    header("Location: " . PROXY_PREFIX . str_ireplace($prefixHost, "invidio.us", $responseURL), true);
+    exit(0);
+}
+
 if ($responseURL !== $url) {
   if (strrpos($responseURL, "googlevideo.com") == true) {
     header("Location: " . $responseURL, true);
-  } elseif (strrpos($responseURL, $prefixHost) == true) {
-    header("Location: " . PROXY_PREFIX . str_ireplace($prefixHost, "invidio.us", $responseURL), true);
-  }	
+  }
   else {
   header("Location: " . PROXY_PREFIX . $responseURL, true);
   }
