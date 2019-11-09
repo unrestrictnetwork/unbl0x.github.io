@@ -95,7 +95,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) == true) {
   }
 }
 
-if (isset($_SERVER['HHTP_CF_CONNECTING_IP'])) {
+if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) {
 	  $_SERVER["HTTPS"] = true;
 	  $_SERVER["SERVER_PORT"] = 443;
 }
