@@ -88,7 +88,7 @@ if (!function_exists("getallheaders")) {
     return $result;
   }
 }
-if (isset($_SERVER['HTTP_CF_CONNECTING_IP']) == true) {
+if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) {
   $_SERVER["HTTPS"] = true;
   $_SERVER["SERVER_PORT"] = 443;
 }
