@@ -20,7 +20,7 @@ $whitelistPatterns = array(
 );
 
 //To enable CORS (cross-origin resource sharing) for proxied sites, set $forceCORS to true.
-$forceCORS = false;
+$forceCORS = true;
 
 //Set to false to report the client machine's IP address to proxied sites via the HTTP `x-forwarded-for` header.
 //Setting to false may improve compatibility with some sites, but also exposes more information about end users to proxied sites.
